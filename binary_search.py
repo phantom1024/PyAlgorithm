@@ -4,7 +4,7 @@
 # @Date     : 2018/1/21
 # @PyVersion: python 3
 # @Software : PyCharm Community Edition 
-# @Des      : 二分查找算法，算法复杂度：O(logn)
+# @Des      : 二分查找算法，算法复杂度：O(log n)
 """
 算法描述：
 （1）起始下标low，末尾下标high
