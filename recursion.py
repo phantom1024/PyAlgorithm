@@ -25,3 +25,24 @@ def fact(x):
     else:
         return x * fact(x - 1)
 print(fact(5))  # 120
+
+# 使用递归实现求和函数
+def recursion_sum(arr):
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        return arr.pop(0) + recursion_sum(arr)
+
+print(recursion_sum([1, 2, 4, 7]))  # 14
+
+# 使用递归计算列表包含的元素数
+def recursion_count(arr):
+    if len(arr) == 0:
+        return 0
+    else:
+        arr.pop()
+        return 1 + recursion_count(arr)
+
+print(recursion_count([1, 2, 3, 4]))  # 4
